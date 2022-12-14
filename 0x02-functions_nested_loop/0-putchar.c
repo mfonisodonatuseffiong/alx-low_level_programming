@@ -1,23 +1,20 @@
 #include "main.h"
-
 /**
- * print_alphabet - Entry point
-#include "main.h"
-
-/**
- * print_alphabet - Entry point
+ * main - print _putchar
+ * is wrritten by mofniso
  * Return: 0
  */
 
-void print_alphabet(void)
+int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		_putchar(c);
-		c++;
-	}
-	_putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
- 
