@@ -1,20 +1,23 @@
 #include "main.h"
+
 /**
- * main - print _putchar
- * is written by mfoniso
+ * print_alphabet - Entry point
+#include "main.h"
+
+/**
+ * print_alphabet - Entry point
  * Return: 0
  */
 
-int main(void)
+void print_alphabet(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
+ 
