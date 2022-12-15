@@ -4,6 +4,7 @@
  * @c: print int
  * Return: give 1 or 0
  */
+
 int_isupper(int c)
 {
 if (c >= 'A' && c <= 'z')
