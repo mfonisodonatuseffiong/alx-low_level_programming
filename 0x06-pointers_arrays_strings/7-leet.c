@@ -16,10 +16,23 @@ char *leet(char *a)
 
 	while (a[i])
 	{
-												for (j = 0; letters[j]; j++)
-		{
-													if (a[i] == letters[j									a[i] = numbers[j];						}
-		i++;
-											}
-	return (a);
+
+										for (j = 0; letters[j]; j++)
+
+													{
+
+																	if (a[i] == letters[j])
+
+																						a[i] = numbers[j];
+
+																			}
+
+												i++;
+
+													}
+
+
+
+						return (a);
+
 }
