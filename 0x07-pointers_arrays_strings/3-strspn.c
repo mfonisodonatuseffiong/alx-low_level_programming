@@ -18,14 +18,12 @@ unsigned int _strspn(char *s, char *accept)
 		stop = 1;
 		for (j = 0; *(accept + j + 1); j++)
 		{
-
 																if (*(s + i) == *(accept + j))										{
-			stop = 0;												break;												}
+				stop = 0;												break;												}
 		}
 		if (stop == 1)
 			break;
 	}
 	return (i);
-
 }
 
