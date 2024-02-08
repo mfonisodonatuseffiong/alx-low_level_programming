@@ -1,23 +1,22 @@
 #include "main.h"
 
 /**
- * flip_bits - This will return the number of bits you would
- * need to flip to get from one number to another
- * @n: For number one.
- * @m: For number two.
+ * print_binary - prints the binary representation
+ * of a number.
+ * @n: unsigned long int.
  *
- * Return: number of bits.
+ * Return: no return.
  */
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+void print_binary(unsigned long int n)
 {
-	unsigned int nbits;
-
-	for (nbits = 0; n || m; n >>= 1, m >>= 1)
+	if (n >> 0)
 	{
-		if ((n & 1) != (m & 1))
-			nbits++;
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
-
-	return (nbits);
+	else
+	{
+		_putchar('0');
+	}
 }
-
